@@ -2,12 +2,67 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}Yonke City Honda | Venta de Autopartes Usadas en Tijuana, Baja California , México y San Diego{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        <link rel="stylesheet" href="{{ asset('bundles/framework/css/style.css') }}">
+
+        <!--Import Google Icon Font-->
+       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Tag para optimizacion mobil -->
+       <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <!-- Tags Seo Web -->
+        <meta name="application-name" content="YonkeCityHonda" />
+        <meta name="author" content="Grupo Sab sam" />
+        <meta name="distributor" content="Grupo Sab Sam" />
+        <meta name="robots" content="All" />
+        <meta name="description" content="Ventas de auto partes usadas , en Tijuana Mexico motor, transmision, diferencial, todo para tu coche, camioneta, pickup." />
+        <meta name="keywords" content="motor, transmision, diferencial , llantas, refaccion, honda, ford, chevrolet, mitsubishi, bmw, lincoln, gmc, baleros, frenos, focos, pickup, coche, carro, Tijuana, San Diego, Chula Vista, Guadalajar, La Paz," />
+        
+        <meta name="rating" content="General" />
+        <meta name="dcterms.title" content="Yonke Formula 1 | Venta de Autopartes Usadas, Tijuana, México" />
+        <meta name="dcterms.contributor" content="Grupo Sab sam" />
+        <meta name="dcterms.creator" content="Grupo sab sam" />
+        <meta name="dcterms.publisher" content="" />
+        <meta name="dcterms.description" content="Ventas de auto partes usadas , en Tijuana Mexico motor, transmision, diferencial, todo para tu coche, camioneta, pickup." />
+        <meta name="dcterms.rights" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Yonke Formula 1 | Venta de Autopartes Usadas, Tijuana, México" />
+        <meta property="og:description" content="Ventas de auto partes usadas , en Tijuana Mexico motor, transmision, diferencial, todo para tu coche, camioneta, pickup." />
+        <meta property="twitter:title" content="Yonke Formula 1 | Venta de Autopartes Usadas, Tijuana, México" />
+        <meta property="twitter:description" content="Ventas de partes para autos, en Tijuana, motor, transmision, diferencial, todo para tu auto."/>
+       
+
+
+       <!-- Menu -->
+
+          <nav>
+            <div class="nav-wrapper">
+             <!-- <a href="#" class="brand-logo"><img src="{{ asset('bundles/framework/images/cityhondalogo.png') }}"></a> -->
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Garantias</a></li>
+                <li><a href="">Inventario</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        
+
+
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        
     </body>
+
+    <!-- Compiled and minified JavaScript -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
+        {% block javascripts %}{% endblock %}
 </html>

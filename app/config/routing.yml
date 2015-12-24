@@ -1,3 +1,8 @@
+yonke_city_honda:
+    resource: "@YonkeCityHondaBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation

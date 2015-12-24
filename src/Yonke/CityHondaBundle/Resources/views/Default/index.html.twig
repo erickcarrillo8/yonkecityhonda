@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="container-fluid">
+  
+			 <div class="parallax-container">
+			 	<div class="parallax"> 
+			 		<img id="banner" src="{{ asset('bundles/framework/images/banner1.jpg') }}" alt="Yonke City Honda">
+				</div>
+
+			</div>	
+
+	<div class="row">
+	   <div class="col s12">
+	   <h1>Bienvenido a <strong>Yonke City Honda</strong><h1>
+	   </div>
+
+	</div>
+
+	<div class="row">
+
+		<div class="col m4 s12">
+			<h3>Servicios</h3>
+			<p>Los mejores servicios, sin costos extras.
+Yonke City Honda  ofrece varios servicios para usted, con el mejor equipo de trabajo.
+			</p>	
+
+		</div>
+
+		<div class="col m4 s12">
+			<h3>Garantias</h3>
+			<p>Las mejores garantías en <strong>Auto-Partes</strong>
+Compra seguro y no te arriesgues, tu pagas tu exiges, mira nuestra garantías y sientete seguro de comprarnos.
+			</p>			
+		</div>
+
+		<div class="col m4 s12">
+			<h3>Inventario</h3>
+			<p>Tenemos la autoparte que buscas
+Contamos con un amplio <strong>inventario de autos</strong>, si no tenemos lo que buscas te lo conseguimos
+			</p>
+		</div>
+	</div>	
+				
+	
+</div>
+{% endblock %}
+
+{% block javascripts %}
+	<script>
+		    $(document).ready(function(){
+		      $('.parallax').parallax();
+		    });
+ 	</script>     
+{% endblock %}
