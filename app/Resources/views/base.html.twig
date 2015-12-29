@@ -40,7 +40,7 @@
 
           <nav>
             <div class="nav-wrapper">
-             <!-- <a href="#" class="brand-logo"><img src="{{ asset('bundles/framework/images/cityhondalogo.png') }}"></a> -->
+            <a href="#" class="brand-logo"><img src="{{ asset('images/logocityhonda.png') }}"></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Nosotros</a></li>
@@ -49,8 +49,23 @@
                 <li><a href="">Inventario</a></li>
                 <li><a href="">Contacto</a></li>
               </ul>
-            </div>
+
+
+              <ul id="slide-out" class="side-nav">
+                <li><a href="#!">Inicio</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Garantias</a></li>
+                <li><a href="">Inventario</a></li>
+                <li><a href="">Contacto</a></li>
+              </ul>
+             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+              
           </nav>
+      
+  
+  
+
         
 
 
@@ -96,6 +111,14 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.5&appId=864324486997127";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+ // Initialize collapse button
+  $(".button-collapse").sideNav();
+  // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  //$('.collapsible').collapsible();
+</script>
+
 
         {% block javascripts %}{% endblock %}
 </html>

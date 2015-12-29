@@ -9,7 +9,7 @@ nav
 
 #banner
 {
-	width: 100%;
+	width: 100% !important;
 }
 
 
@@ -23,3 +23,5 @@ nav
 
 
 }
+
+#staggered-test li,#image-test{opacity:0}
