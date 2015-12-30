@@ -19,9 +19,15 @@ nav
 
 .page-footer
 { 
-	background-color:  #446CB3 !important;
+	background-color:  #26A65B !important;
 
 
 }
 
-#staggered-test li,#image-test{opacity:0}
+#tips li,#image-test
+{
+	opacity:0;
+	padding-top: 3%;
+	font-size: 18px;
+
+}

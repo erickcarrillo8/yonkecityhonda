@@ -9,27 +9,7 @@
 	        <img id="banner" src="{{ asset('images/banner1.jpg') }}" alt="Yonke City Honda"> <!-- random image -->
 	        
 	      </li>
-	      <li>
-	        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-	        <div class="caption left-align">
-	          <h3>Left Aligned Caption</h3>
-	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-	        </div>
-	      </li>
-	      <li>
-	        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-	        <div class="caption right-align">
-	          <h3>Right Aligned Caption</h3>
-	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-	        </div>
-	      </li>
-	      <li>
-	        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-	        <div class="caption center-align">
-	          <h3>This is our big Tagline!</h3>
-	          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-	        </div>
-	      </li>
+	      
 	    </ul>
 	  </div>
 </div>
@@ -43,7 +23,7 @@
 	<div class="row">
 
 		<div class="col m4 s12 hoverable" >
-			<i class="large material-icons" > settings </i>
+			<img src="{{ asset('images/icons/servicios.png') }}" alt="Servicios">
 			<h3>Servicios</h3>
 			<p>Los mejores servicios, sin costos extras.
 Yonke City Honda  ofrece varios servicios para usted, con el mejor equipo de trabajo.
@@ -52,7 +32,7 @@ Yonke City Honda  ofrece varios servicios para usted, con el mejor equipo de tra
 		</div>
 
 		<div class="col m4 s12 hoverable">
-			<i class="large material-icons"  > thumb_up </i>
+			<img src="{{ asset('images/icons/garantia.png') }}" alt="Garantias">
 			<h3>Garantias</h3>
 			<p>Las mejores garantías en <strong>Auto-Partes</strong>
 Compra seguro y no te arriesgues, tu pagas tu exiges, mira nuestra garantías y sientete seguro de comprarnos.
@@ -60,7 +40,7 @@ Compra seguro y no te arriesgues, tu pagas tu exiges, mira nuestra garantías y 
 		</div>
 
 		<div class="col m4 s12 hoverable">
-			<i class="large material-icons" > directions_car </i>
+			<img src="{{ asset('images/icons/inventario.png') }}" alt="Autos">
 			<h3>Inventario</h3>
 			<p>Tenemos la autoparte que buscas
 Contamos con un amplio <strong>inventario de autos</strong>, si no tenemos lo que buscas te lo conseguimos
@@ -88,7 +68,7 @@ Contamos con un amplio <strong>inventario de autos</strong>, si no tenemos lo qu
 			
 			<h3>¡Que no te engañen!</h3>
 
-				<ul id="staggered-test" >
+				<ul id="tips" >
 					<li>1- Cuando adquieras una <strong>AUTO-PARTE</strong> siempre preguntale al vendedor si la tiene instalada en el <strong>auto</strong>.</li>
 					<li>2.- Asegurate que la <strong>AUTO-PARTE</strong> sea del vehiculo que estas pidiendo.</li>
 					<li>3.- Siempre pregunta en caso de no ser la parte que buscas, o no funcione, o no le quede, si el yonke te rembolsa tu dinero.</li>
@@ -122,9 +102,9 @@ Contamos con un amplio <strong>inventario de autos</strong>, si no tenemos lo qu
 
 
     var options = [  
-    {selector: '#staggered-test', 
+    {selector: '#tips', 
     offset: 200, 
-    callback: 'Materialize.showStaggeredList("#staggered-test")' } 
+    callback: 'Materialize.showStaggeredList("#tips")' } 
     ]; 
      Materialize.scrollFire(options); 
 
