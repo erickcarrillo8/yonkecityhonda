@@ -11,12 +11,14 @@ use Symfony\Component\HttpFoundation\Response;
 class NosotrosController extends Controller
 { 
 	/**
-     * @Route("/nosotros/")
-     * @Template("YonkeCityHondaBundle:nosotros.html.twig")
+     * @Route("/nosotros/" , name ="nosotros")
+     * @Template("YonkeCityHondaBundle:Default:nosotros.html.twig")
      */
-    public function indexAction()
-    {
+    public function indexAction() 
+    {  
        
-       return $this->render('YonkeCityHondaBundle:nosotros.html.twig');
+       return $this->render('YonkeCityHondaBundle:Default:nosotros.html.twig');
     }
+
+
 }

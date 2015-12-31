@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+<div class="container">
+
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header active"><i class="material-icons">perm_identity</i><h3>Acerca de Nosotros</h3></div>
+      <div class="collapsible-body"><p>Grupo SAB-SAM inicia actividades en 1991 ofreciendo en el ramo de las <strong>autopartes usadas</strong>, el servicio de venta e instalación para nuestros clientes que a base de muchos esfuerzos con la gente que nos apoyó y sigue apoyando nuestra empresa ha ido creciendo con nuevas sucursales en la ciudad de <em>Tijuana Baja California</em>. Grupo SAB-SAM es una empresa que ha venido transformándose y abarcando nuevos rubros para satisfacer las necesidades de toda nuestra clientela, que son: desde un tornillo, hasta un automóvil completo, así como la compra, transportación y asesoría en el ramo de las <strong>auto partes usadas</strong> y nos distinguimos por la gran calidad humana de nuestros empleados y la inigualable atención que le brindamos a todos nuestros clientes y amigos, siendo así la diferencia entre nuestra empresa y las demás del mismo ramo.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Misión</div>
+      <div class="collapsible-body"><p>Consolidar a grupo SAB-SAM como líder en el servicio de la compra y venta de auto partes usadas así como de accesorios para automóvil siendo una prioridad el posicionamiento de toda nuestra línea de productos y servicios que ofrecemos. Somos una empresa con un crecimiento agresivo y constante para ofrecerle a nuestros clientes una alta calidad, un excelente servicio y sobre todo una garantía segura que respalda nuestras operaciones de compra-venta de auto partes usadas y que nos posiciona como la mejor opción.</p></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+    </li>
+  </ul>
+
+
+
+
+</div>
+
+
+{% endblock %}
+
+{% block javascripts %}
+<script>  
+    $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+  });
+</script>
+
+{% endblock %}
