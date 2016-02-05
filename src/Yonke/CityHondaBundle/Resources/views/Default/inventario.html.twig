@@ -1,0 +1,83 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+  		
+
+<div class="container-fluid">
+    <div class="row"> 
+
+      <div class="caja">
+          <a href='#modal1' class='image fit modal-trigger '> 
+           <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg'>
+          </a>  
+              <h1>Honda CRV</h1>  
+              Año:    1990 </br>
+              Motor:   2.0</br>
+              Transmision:  aut</br>
+            <div id='modal1' class='modal' align='center'>
+                  <div class='modal-content'>
+                      <h1>Honda CRV </h1>
+                     <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg' width='400px'>
+                 </div>
+
+            </div>
+       
+      </div>
+
+         <div class="caja">
+          <a href='#modal1' class='image fit modal-trigger '> 
+           <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg'>
+          </a>  
+              <h1>Honda CRV</h1>  
+              Año:    1990 </br>
+              Motor:   2.0</br>
+              Transmision:  aut</br>
+            <div id='modal1' class='modal' align='center'>
+                  <div class='modal-content'>
+                      <h1>Honda CRV </h1>
+                     <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg' width='400px'>
+                 </div>
+
+            </div>
+       
+      </div>
+
+         <div class="caja">
+          <a href='#modal1' class='image fit modal-trigger '> 
+           <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg'>
+          </a>  
+              <h1>Honda CRV</h1>  
+              Año:    1990 </br>
+              Motor:   2.0</br>
+              Transmision:  aut</br>
+            <div id='modal1' class='modal' align='center'>
+                  <div class='modal-content'>
+                      <h1>Honda CRV </h1>
+                     <img src='http://www.yonkethecardepot.com/autos/IMG_20140616_103538.jpg' width='400px'>
+                 </div>
+
+            </div>
+       
+      </div>
+      
+    </div>
+ 
+</div>           
+        	
+            
+ 
+{% endblock %}
+
+{% block javascripts %}
+       
+          <script type="text/javascript">
+               $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+       
+        
+          </script>
+  {% endblock %}
+  

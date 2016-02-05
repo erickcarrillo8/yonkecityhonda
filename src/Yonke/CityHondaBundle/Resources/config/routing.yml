@@ -1,0 +1,4 @@
+yonke_city_honda_autos:
+    resource: "@YonkeCityHondaBundle/Resources/config/routing/autos.yml"
+    prefix:   /autos
+

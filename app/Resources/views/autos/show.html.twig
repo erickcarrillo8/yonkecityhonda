@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Autos</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ auto.id }}</td>
+            </tr>
+            <tr>
+                <th>Marca</th>
+                <td>{{ auto.marca }}</td>
+            </tr>
+            <tr>
+                <th>Modelo</th>
+                <td>{{ auto.modelo }}</td>
+            </tr>
+            <tr>
+                <th>Ano</th>
+                <td>{{ auto.ano }}</td>
+            </tr>
+            <tr>
+                <th>Transmision</th>
+                <td>{{ auto.transmision }}</td>
+            </tr>
+            <tr>
+                <th>Motor</th>
+                <td>{{ auto.motor }}</td>
+            </tr>
+            <tr>
+                <th>Foto</th>
+                <td>{{ auto.foto }}</td>
+            </tr>
+            <tr>
+                <th>Detalles</th>
+                <td>{{ auto.detalles }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('verautos') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('editarauto', { 'id': auto.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

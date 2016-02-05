@@ -1,0 +1,24 @@
+autos_index:
+    path:     /
+    defaults: { _controller: "YonkeCityHondaBundle:Autos:index" }
+    methods:  GET
+
+autos_show:
+    path:     /{id}/show
+    defaults: { _controller: "YonkeCityHondaBundle:Autos:show" }
+    methods:  GET
+
+autos_new:
+    path:     /new
+    defaults: { _controller: "YonkeCityHondaBundle:Autos:new" }
+    methods:  [GET, POST]
+
+autos_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "YonkeCityHondaBundle:Autos:edit" }
+    methods:  [GET, POST]
+
+autos_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "YonkeCityHondaBundle:Autos:delete" }
+    methods:  DELETE

@@ -1,0 +1,32 @@
+Yonke\CityHondaBundle\Entity\Autos:
+    type: entity
+    table: null
+    repositoryClass: Yonke\CityHondaBundle\Repository\AutosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        marca:
+            type: string
+            length: 255
+        modelo:
+            type: string
+            length: 255
+        ano:
+            type: integer
+        transmision:
+            type: string
+            length: 255
+        motor:
+            type: string
+            length: 255
+        foto:
+            type: string
+            length: 255
+        detalles:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

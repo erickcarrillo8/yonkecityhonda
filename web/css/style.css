@@ -37,3 +37,28 @@ nav
  {
  	font-size: 18px;
  }
+
+ .caja
+ {
+ 	float: left;
+ 	margin-top:20px;
+ 	margin-left: 50px;
+ 	border-style: solid;
+ 	border-color: #27ae60;
+ 	border-width: 1px;
+ 	border-radius: 2px;
+ 	padding: 2%;
+
+
+ }
+
+ .caja img
+ {
+ 	width: 100%;
+ 	max-width: 200px;
+ }
+
+.caja h1
+{
+	font-size: 25px;
+}

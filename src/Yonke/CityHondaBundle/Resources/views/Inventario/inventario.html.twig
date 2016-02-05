@@ -1,0 +1,55 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+  		
+
+<div class="container-fluid">
+    <div class="row"> 
+
+
+    {% for row in autos %}
+	   <div class="caja">
+          <a href='#modal{{ row.id }}' class='image fit modal-trigger '> 
+           <img src='{{ row.foto }}' alt="{{ row.marca }} {{ row.modelo }}">
+          </a>  
+              <h1>{{ row.marca }} {{ row.modelo }} </h1>  
+              Año:    {{ row.ano }} </br>
+              Motor:   {{ row.motor }}</br>
+              Transmision:  {{row.transmision }}</br>
+            <div id='modal{{ row.id }}' class='modal' align='center'>
+                  <div class='modal-content'>
+                      <h1> {{ row.marca }} {{ row.modelo }} </h1>
+                     <img src='{{ row.foto }} ' width='400px' alt="{{ row.marca }} {{ row.modelo }}">
+                 </div>
+
+            </div>
+       
+      </div>
+    {% endfor %}
+
+     
+
+         
+
+      
+    </div>
+ 
+</div>           
+        	
+            
+ 
+{% endblock %}
+
+{% block javascripts %}
+       
+          <script type="text/javascript">
+               $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+                
+          </script>
+  {% endblock %}
+  
