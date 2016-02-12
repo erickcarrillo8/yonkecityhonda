@@ -10,6 +10,7 @@ use Yonke\CityHondaBundle\Entity\Autos;
 use Yonke\CityHondaBundle\Form\AutosType;
 use Symfony\Component\HttpFoundation\JsonResponse;
 
+
 /**
  * Autos controller.
  *
@@ -20,15 +21,27 @@ class AutosController extends Controller
      * @Route("/verautos" , name ="verautos")
      * @Template("YonkeCityHondaBundle:Inventario:inventario.html.twig")
      */
-    public function indexAction()
+    public function indexAction(Request $request)
     {
-         $em = $this->getDoctrine()->getManager();
+        
+        $session = $request->getSession();
 
-        $autos = $em->getRepository('YonkeCityHondaBundle:Autos')->findAll();
+        if ($session->has("id"))
+        {   
+              $em = $this->getDoctrine()->getManager();
+              $autos = $em->getRepository('YonkeCityHondaBundle:Autos')->findAll();
 
-        return $this->render('autos/index.html.twig', array(
-            'autos' => $autos,
-        ));
+                return $this->render('autos/index.html.twig', array(
+                'autos' => $autos,
+                 ));
+
+        }
+        else
+        {
+                return  $this->redirect($this->generateUrl("login"));
+        }
+
+       
     }
 
    /**

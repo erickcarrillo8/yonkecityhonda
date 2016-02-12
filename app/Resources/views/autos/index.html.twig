@@ -1,7 +1,11 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Autos</h1>
+
+    <h1>Bienvenido  {{ app.session.get("nombre") }}</h1>
+    <h2>Autos</h2>
+
+    <a class="btn-large" href="{{ path('logout') }}"> Salir </a>
 
     <table>
         <thead>

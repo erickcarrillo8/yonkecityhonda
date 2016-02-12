@@ -1,0 +1,80 @@
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+
+  {%  for flashMessage in app.session.flashbag.get('mensaje') %}
+        
+         
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4></h4>
+        <p>{{ flashMessage }}</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Aceptar</a>
+      </div>
+    </div>
+
+
+    <script type="text/javascript">
+          $(document).ready(function(){
+             $('#modal1').openModal();
+
+          });
+    </script>
+
+
+     
+      {% endfor %}
+  
+
+
+<div class="container">
+
+  <div class="row">
+    <form class="col s6" action="" method="POST"> 
+      <h1>Inicio de sesión </h1>
+       <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" name="correo">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" name="password">
+          <label for="password">Password</label>
+           <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
+        </div>
+      </div>
+     
+    </form>
+  </div>
+        
+ 
+</div>           
+        	
+            
+ 
+{% endblock %}
+
+
+
+{% block javascripts %}
+       
+          <script type="text/javascript">
+               $(document).ready(function(){
+    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    $('.modal-trigger').leanModal();
+  });
+
+
+
+                
+          </script>
+  {% endblock %}
+
+

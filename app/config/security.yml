@@ -8,6 +8,21 @@ security:
             memory: ~
 
     firewalls:
+        secured_area:
+            pattern:      ^/
+            anonymous: ~
+            http_basic:
+                realm: "Secured Demo Area"
+
+    access_control: 
+            - { path: ^/admin, roles: ROLE_ADMIN}
+
+    providers: 
+        in_memory:
+            users:
+                usuario: {password: user, roles: 'ROLE_USER'}
+                admin: {password: kitten, roles: 'ROLE_ADMIN'}
+
         # disables authentication for assets and the profiler, adapt it according to your needs
         dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/

@@ -1,0 +1,21 @@
+Yonke\CityHondaBundle\Entity\Usuarios:
+    type: entity
+    table: null
+    repositoryClass: Yonke\CityHondaBundle\Repository\UsuariosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        correo:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
